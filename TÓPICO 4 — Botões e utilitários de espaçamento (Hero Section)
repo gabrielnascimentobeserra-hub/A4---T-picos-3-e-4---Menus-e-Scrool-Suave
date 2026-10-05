@@ -1,0 +1,144 @@
+Objetivo
+
+No arquivo "index.html", crie uma primeira dobra (hero section) visualmente organizada, centralizada vertical e horizontalmente, com uma chamada principal e dois botões com diferentes níveis de hierarquia visual.
+
+Hero Section
+
+Logo após a navbar e antes da seção de serviços, crie uma seção utilizando um elemento "<header>" com as seguintes classes:
+
+<header class="bg-primary text-white text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 80vh;">
+
+A hero deve ocupar aproximadamente 80% da altura da tela e manter todo o conteúdo centralizado mesmo quando a janela do navegador for redimensionada.
+
+Conteúdo da Hero
+
+Dentro do "<header>", crie um ".container" contendo:
+
+Título principal
+
+Utilize:
+
+<h1 class="display-3 fw-bold">
+    Olá, eu sou o Seu Nome
+</h1>
+
+Texto de apresentação
+
+Utilize:
+
+<p class="lead mb-4">
+    Transformo ideias em experiências digitais responsivas
+</p>
+
+Botões
+
+Crie uma "<div>" com:
+
+<div class="d-flex gap-3 justify-content-center">
+
+Dentro dela, crie dois links.
+
+Botão primário:
+
+<a href="#servicos" class="btn btn-light btn-lg">
+    Saiba mais →
+</a>
+
+O botão "Saiba mais" deve utilizar "btn-light", ficando visualmente preenchido e recebendo maior destaque.
+
+Botão secundário:
+
+<a href="#contato" class="btn btn-outline-light btn-lg">
+    Fale comigo
+</a>
+
+O botão "Fale comigo" deve utilizar "btn-outline-light", funcionando como ação secundária.
+
+Regras de hierarquia visual
+
+- Deve existir apenas um botão primário.
+- O botão "Saiba mais" deve ser visualmente mais destacado.
+- O botão "Fale comigo" deve ser secundário e utilizar estilo outline.
+- Os dois botões devem permanecer lado a lado em telas maiores.
+- Utilize "gap-3" para criar espaçamento consistente entre os botões.
+- O conteúdo deve permanecer centralizado horizontal e verticalmente.
+
+Responsividade
+
+Faça com que a hero continue funcionando corretamente em telas menores.
+
+Se necessário, permita que os botões quebrem para uma nova linha em dispositivos muito pequenos, sem comprometer a legibilidade ou o espaçamento.
+
+Correção de centralização
+
+Caso o conteúdo não esteja centralizado verticalmente, verifique obrigatoriamente se o elemento "<header>" possui:
+
+d-flex
+flex-column
+justify-content-center
+align-items-center
+
+Também verifique se existe uma altura mínima aplicada.
+
+Pode utilizar:
+
+style="min-height: 80vh;"
+
+ou, caso o projeto utilize as utilities disponíveis do Bootstrap:
+
+min-vh-75
+
+A prioridade é garantir que o conteúdo permaneça centralizado verticalmente mesmo quando a janela do navegador for redimensionada.
+
+Integração com a navbar
+
+A hero deve ser posicionada corretamente após a navbar fixa criada anteriormente.
+
+Não remova nem altere o funcionamento da navbar.
+
+O link:
+
+href="#servicos"
+
+deve levar à seção de Serviços.
+
+O link:
+
+href="#contato"
+
+deve levar à seção de Contato.
+
+Mantenha também a rolagem suave configurada anteriormente no "css/custom.css".
+
+Resultado esperado
+
+O resultado deve apresentar:
+
+1. Uma hero com fundo azul ("bg-primary").
+2. Texto branco e centralizado.
+3. Hero ocupando aproximadamente 80% da altura da viewport.
+4. Título grande e destacado.
+5. Texto de apresentação abaixo do título.
+6. Botão branco preenchido como ação principal.
+7. Botão branco contornado como ação secundária.
+8. Espaçamento adequado entre os botões.
+9. Conteúdo centralizado vertical e horizontalmente.
+10. Links funcionando corretamente com as seções "#servicos" e "#contato".
+
+Checklist do checkpoint
+
+- [ ] Hero ocupa aproximadamente 80% da tela.
+- [ ] Conteúdo está centralizado horizontalmente.
+- [ ] Conteúdo está centralizado verticalmente.
+- [ ] Título possui hierarquia visual forte.
+- [ ] Botão "Saiba mais" é o botão primário.
+- [ ] Botão "Fale comigo" é o botão secundário.
+- [ ] "Saiba mais" leva para "#servicos".
+- [ ] "Fale comigo" leva para "#contato".
+- [ ] Espaçamento entre os botões está adequado.
+- [ ] Hero continua centralizada ao redimensionar a janela.
+- [ ] Navbar continua funcionando normalmente.
+
+Ao final
+
+Liste as alterações realizadas no "index.html" e explique brevemente como as classes Bootstrap utilizadas garantem a centralização, o espaçamento e a hierarquia visual dos elementos.
