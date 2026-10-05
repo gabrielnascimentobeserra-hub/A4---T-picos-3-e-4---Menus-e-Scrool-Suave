@@ -1,0 +1,99 @@
+Objetivo
+
+Transforme a navbar do arquivo "index.html" em uma navegação funcional, permitindo que os usuários acessem diferentes seções da página por meio de links internos e rolagem suave.
+
+Requisitos da Navbar
+
+Atualize a navbar existente no arquivo "index.html" seguindo estas regras:
+
+- Mantenha as classes "fixed-top", "bg-dark" e "navbar-dark".
+- Substitua os links atuais pelos seguintes:
+  - Início → "#inicio"
+  - Sobre → "#sobre"
+  - Serviços → "#servicos"
+  - Contato → "#contato"
+- Utilize textos claros e descritivos nos links, pensando em acessibilidade.
+- Mantenha o funcionamento do menu responsivo para dispositivos móveis.
+
+Seções da página
+
+Faça as seguintes alterações no conteúdo:
+
+1. Envolva o título "Meu Portfólio" da primeira seção em uma "<section>" com o atributo:
+
+id="inicio"
+
+2. Adicione "id="sobre"" à seção seguinte que será criada para apresentar a seção Sobre.
+
+3. Garanta que exista uma seção de Serviços com:
+
+id="servicos"
+
+4. Crie uma seção simples de contato com:
+
+id="contato"
+
+e inclua, inicialmente, o título:
+
+<h2>Contato</h2>
+
+CSS
+
+No arquivo "css/custom.css", adicione:
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 76px;
+}
+
+O "padding-top" deve compensar a altura da navbar fixa para evitar que o conteúdo fique escondido atrás dela.
+
+Correção para o posicionamento das seções
+
+Para garantir que as seções não fiquem escondidas atrás da navbar durante a rolagem, ajuste o CSS para:
+
+body {
+    padding-top: 90px;
+}
+
+section[id] {
+    scroll-margin-top: 90px;
+}
+
+Mantenha:
+
+html {
+    scroll-behavior: smooth;
+}
+
+Resultado esperado
+
+Ao clicar nos links da navbar:
+
+1. Início deve levar à seção "#inicio".
+2. Sobre deve levar à seção "#sobre".
+3. Serviços deve levar à seção "#servicos".
+4. Contato deve levar à seção "#contato".
+5. A navegação deve utilizar rolagem suave, e não uma mudança instantânea de posição.
+6. Nenhum título ou conteúdo importante deve ficar escondido atrás da navbar fixa.
+7. Em telas pequenas, o menu responsivo deve continuar funcionando normalmente.
+8. Ao selecionar um link no menu mobile, a navegação deve levar corretamente à seção correspondente.
+
+Checklist do checkpoint
+
+Verifique se:
+
+- [x] Os 4 links da navbar funcionam.
+- [x] Os links utilizam âncoras com "#id".
+- [x] A rolagem é suave.
+- [x] A navbar permanece fixa no topo.
+- [x] O conteúdo não fica escondido atrás da navbar.
+- [x] O menu mobile continua funcionando.
+- [x] Os textos dos links são claros e acessíveis.
+
+Ao final
+
+Liste todas as alterações realizadas no "index.html" e no "css/custom.css", indicando de forma objetiva o que foi alterado em cada arquivo.
